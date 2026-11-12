@@ -1,0 +1,191 @@
+/* Основні стилі та скидання */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка сайту */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.nav a:hover, .nav a.active {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+/* Головний екран (Hero) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-tag {
+    font-size: 0.75rem;
+    color: #777;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 10px 0 20px 0;
+    color: #111;
+}
+
+.hero-content p {
+    color: #666;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.primary-btn {
+    background-color: #ffde59; /* Жовтий акцент із макета */
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.secondary-btn {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-note {
+    display: block;
+    font-size: 0.8rem;
+    color: #d9534f;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 250px;
+    border: 2px dashed #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    background-color: #fafafa;
+}
+
+/* Секція переваг */
+.features {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.features h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.features-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feature-card {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 25px;
+    text-align: left;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.feature-card p {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Підвал */
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 0.85rem;
+    margin-top: 20px;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .hero, .features-grid {
+        flex-direction: column;
+    }
+}
